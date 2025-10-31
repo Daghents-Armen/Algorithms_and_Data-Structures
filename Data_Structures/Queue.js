@@ -69,16 +69,6 @@ class Queue{
     size(){
         return this.#size;
     }
-
-    contains(elem){
-        for (let i = 0; i < this.#size; ++i) {
-            if(this.#arr[(this.#front + i) % this.#cap] === elem){
-                return true;
-            }
-        }
-
-        return false;
-    }
 }
 
 let queue = new Queue();

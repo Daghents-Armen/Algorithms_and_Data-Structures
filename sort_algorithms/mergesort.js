@@ -26,7 +26,7 @@ function merge(nums, low, mid, high){
 }
 
 function mergeSort(nums, low, high){
-    if(low >= high) return ;
+    if(low >= high) return;
 
     let mid = Math.floor(low + (high - low) / 2);
 
@@ -37,5 +37,6 @@ function mergeSort(nums, low, high){
 }
 
 mergeSort(nums, 0, nums.length - 1);
+
 
 console.log(nums);

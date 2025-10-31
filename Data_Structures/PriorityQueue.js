@@ -34,8 +34,14 @@ class PriorityQueue{
         }
     }
 
+     push(elem) {
+    this.#heap.push(elem);
+
+    this.heapifyUp(this.#heap.length - 1);
+  }
+
     heapifyDown(i){
-         let n = this.#heap.length;
+    let n = this.#heap.length - 1;
 
     while (true) {
       let left = this.left(i);
@@ -43,8 +49,8 @@ class PriorityQueue{
 
       let smallest = i;
 
-      if (left < n && this.#compare(this.#heap[left], this.#heap[smallest]) < 0) smallest = left;
-      if (right < n && this.#compare(this.#heap[right], this.#heap[smallest]) < 0) smallest = right;
+      if (left <= n && this.#compare(this.#heap[left], this.#heap[smallest]) < 0) smallest = left;
+      if (right <= n && this.#compare(this.#heap[right], this.#heap[smallest]) < 0) smallest = right;
 
       console.log('smallest: ', smallest);
       if (i != smallest) {
@@ -56,25 +62,7 @@ class PriorityQueue{
     }
   }
 
-  size() {
-    return this.#heap.length;
-  }
-
-  empty() {
-    return this.#heap.length === 0;
-  }
-
-  push(elem) {
-    this.#heap.push(elem);
-
-    this.heapifyUp(this.#heap.length - 1);
-  }
-
-  peek(){
-    return this.#heap[0];
-  }
-
-  pop(){
+    pop(){
     if(this.empty()){
         throw new Error("is empty");
     }
@@ -88,6 +76,18 @@ class PriorityQueue{
     }
 
     return root;
+  }
+
+  size() {
+    return this.#heap.length;
+  }
+
+  empty() {
+    return this.#heap.length === 0;
+  }
+
+  peek(){
+    return this.#heap[0];
   }
 
   print(){

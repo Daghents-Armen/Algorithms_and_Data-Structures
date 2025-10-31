@@ -1,4 +1,4 @@
-let arr = [4,1,2,3,7,6,5,8];
+let arr = [7,3,9,4,6,3,2]; //[2,3,9,4,6,3,7]
 
 const swap = (arr, left, right) => {
     [arr[left], arr[right]] = [arr[right], arr[left]];
@@ -7,7 +7,7 @@ const swap = (arr, left, right) => {
 const partition = (arr, low, high) => {
     let i = low - 1;
     let j = high;
-    let pivot = arr[low];
+    let pivot = arr[high];
 
     while(i < j){
         do {
