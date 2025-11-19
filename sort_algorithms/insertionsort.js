@@ -1,3 +1,8 @@
+//Insertion sort - works by dividing the array into a 'sorted' and 
+// 'unsorted' part. One by One, 
+// elements from the unsorted part are picked and inserted 
+// into their correct position in the sorted part.
+
 let arr = [1,7,9,2,10];
 
 for (let i = 1; i < arr.length; ++i) {

@@ -1,4 +1,9 @@
-let arr = [7,3,9,4,6,3,2]; //[2,3,9,4,6,3,7]
+// Quick Sort - an in-place divide-and-conquer sorting algorithm
+// that selects a pivot, partitions the array around it, and
+// recursively sorts partitions. Average O(n log n) time.
+
+
+let arr = [7,3,9,4,6,3,2];
 
 const swap = (arr, left, right) => {
     [arr[left], arr[right]] = [arr[right], arr[left]];

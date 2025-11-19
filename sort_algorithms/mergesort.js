@@ -1,3 +1,7 @@
+// Merge Sort - a divide-and-conquer algorithm that recursively
+// splits arrays, sorts subarrays, and merges them. Runs in O(n log n).
+
+
 let nums = [9,5,7,3,4,6,8];
 
 function merge(nums, low, mid, high){

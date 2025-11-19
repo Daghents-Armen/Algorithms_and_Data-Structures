@@ -1,26 +1,5 @@
-let arr = [5,8,3,12,10,2,2];
-
-for (let i = 0; i < arr.length - 1; ++i) {
-    let min = 0;
-    let index = i;
-    let swapped = 0;
-    for (let j = i + 1; j < arr.length; ++j) {
-        if(arr[index] > arr[j]){
-            min = arr[j]
-            index = j;
-            swapped = 1;
-        }
-    }
-    if(swapped){
-    let tmp = arr[i];
-    arr[i] = min;
-    arr[index] = tmp;
-}
-}
-console.log(arr);
-
-
-// more optimal way
+//  Selection Sort - works by repeatedly finding the minimum element 
+// from the unsorted part and placing it at the beginning of the array.
 
 let nums = [5,2,7,5,9,2,5,3,7,4];
 

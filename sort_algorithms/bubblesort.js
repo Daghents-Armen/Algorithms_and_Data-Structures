@@ -1,3 +1,7 @@
+// Bubble sort - is a simple comparison-based algorithm where adjacent
+//  elements are repeatedly compared and swapped if they are the a wrong order. 
+// The process continues until no swaps are needed, meaning the array is sorted.
+
 let arr = [4,2,6,4,7,6,8];
 
 for(let i = 0; i < arr.length - 1; ++i) {
