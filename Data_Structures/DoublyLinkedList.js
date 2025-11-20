@@ -1,3 +1,8 @@
+// Doubly Linked List - similar to a singly linked list but each
+// node has pointers to both next and previous nodes, allowing
+// efficient insertion, deletion from both ends.
+
+
 class Node {
   constructor(data, next = null, prev = null) {
     this.data = data;

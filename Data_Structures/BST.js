@@ -1,3 +1,8 @@
+// Binary Search Tree - a tree where each node has at most
+// two children, with left < parent < right. Supports O(log n)
+// average insert, delete, and search, but can degrade to O(n).
+
+
 class Node{
     constructor(data = null, right = null, left = null){
         this.data = data;

@@ -1,3 +1,8 @@
+// Hash Table - a data structure that maps keys to values using
+// a hash function for O(1) average insert/search/delete.
+// Handles collisions via chaining or open addressing.
+
+
 class HashTable{
     constructor(initial_capacity = 11, maxfactor = 1.0){
         if(!this.is_prime(initial_capacity)){

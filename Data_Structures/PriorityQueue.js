@@ -1,3 +1,9 @@
+// Heap (Min/Max) - a complete binary tree where parent nodes
+// satisfy heap property (min ≤ children for min-heap). Used
+// in priority queues and heap sort.
+
+
+
 class PriorityQueue{
     #heap = [];
     #compare;

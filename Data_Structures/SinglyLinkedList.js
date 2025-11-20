@@ -1,3 +1,8 @@
+// Singly Linked List - a linear data structure where each node
+// points to the next node. Supports efficient insertion and
+// deletion at head or middle positions.
+
+
 class Node{
     constructor(data, next = null){
         this.data = data;

@@ -1,3 +1,7 @@
+// Stack - a Last-In-First-Out (LIFO) data structure supporting
+// push, pop, and peek, isEmpty, size, search, resize operations. Useful for recursion, undo,
+// or expression evaluation.
+
 class Stack{
     #top = -1;
     #size = 0;

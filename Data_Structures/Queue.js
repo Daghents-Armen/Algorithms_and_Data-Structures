@@ -1,3 +1,8 @@
+// Queue - a First-In-First-Out (FIFO) data structure supporting
+// enqueue, dequeue, and peek operations. Useful for BFS,
+// task scheduling, or buffering.
+
+
 class Queue{
     #size = 0;
     #arr = null;

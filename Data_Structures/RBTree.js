@@ -1,3 +1,8 @@
+// Red-Black Tree - a self-balancing binary search tree where each
+// node has a color (red or black) to ensure the tree remains balanced.
+// Guarantees O(log n) time for insert, delete, and search operations.
+
+
 const RED = 'red';
 const BLACK = 'black';
 

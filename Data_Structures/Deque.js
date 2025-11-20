@@ -1,3 +1,8 @@
+// Deque (Double-Ended Queue) - a linear data structure that allows
+// insertion and deletion of elements from both front and rear ends.
+// Useful for implementing sliding window algorithms, queues, and stacks.
+
+
 class Deque{
     #map = null;
     constructor(Initialbucket = 4, Initialblocksize = 8){
